@@ -23,9 +23,9 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": ">=1.19.2",
-    "sdm_core": ">=1.19.2-2.0.0",
-    "crafttweaker": ">=10.1.55",
-    "sdmgamestages": ">=1.19.2-1.1.0"
+    "minecraft": ">=1.20.1",
+    "sdmcore": ">=1.20.1-2.0.0",
+    "crafttweaker": ">=14.0.40",
+    "sdmgamestages": ">=1.20.1-1.1.0"
   }
 }

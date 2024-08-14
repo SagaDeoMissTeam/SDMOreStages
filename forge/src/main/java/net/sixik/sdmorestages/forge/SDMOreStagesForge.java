@@ -32,7 +32,7 @@ public class SDMOreStagesForge {
     @SubscribeEvent
     public void onGameStageAdded(GameStageEvent.Added event) {
         if (event.getEntity() instanceof ServerPlayer player) {
-            ChunkMap map = ((ServerLevel)player.level).getChunkSource().chunkMap;
+            ChunkMap map = ((ServerLevel)player.level()).getChunkSource().chunkMap;
             ((ChunkMapAccessor)map).setUpdatePlayerStatus(player, true);
         }
     }
@@ -40,7 +40,7 @@ public class SDMOreStagesForge {
     @SubscribeEvent
     public void onGameStageRemoved(GameStageEvent.Remove event) {
         if (event.getEntity() instanceof ServerPlayer player) {
-            ChunkMap map = ((ServerLevel)player.level).getChunkSource().chunkMap;
+            ChunkMap map = ((ServerLevel)player.level()).getChunkSource().chunkMap;
             ((ChunkMapAccessor)map).setUpdatePlayerStatus(player, true);
         }
 
@@ -49,7 +49,7 @@ public class SDMOreStagesForge {
     @SubscribeEvent
     public void onGameStageCleared(GameStageEvent.Cleared event) {
         if (event.getEntity() instanceof ServerPlayer player) {
-            ChunkMap map = ((ServerLevel)player.level).getChunkSource().chunkMap;
+            ChunkMap map = ((ServerLevel)player.level()).getChunkSource().chunkMap;
             ((ChunkMapAccessor)map).setUpdatePlayerStatus(player, true);
         }
     }

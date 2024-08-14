@@ -29,19 +29,19 @@ public class SDMOreStagesFabric implements ModInitializer {
 
         GameStagesEvent.ADD.register(((player, s) -> {
             if (player instanceof ServerPlayer serverPlayer) {
-                ChunkMap map = ((ServerLevel)serverPlayer.level).getChunkSource().chunkMap;
+                ChunkMap map = ((ServerLevel)serverPlayer.level()).getChunkSource().chunkMap;
                 ((ChunkMapAccessor)map).setUpdatePlayerStatus(serverPlayer, true);
             }
         }));
         GameStagesEvent.REMOVE.register(((player, s) -> {
             if (player instanceof ServerPlayer serverPlayer) {
-                ChunkMap map = ((ServerLevel)serverPlayer.level).getChunkSource().chunkMap;
+                ChunkMap map = ((ServerLevel)serverPlayer.level()).getChunkSource().chunkMap;
                 ((ChunkMapAccessor)map).setUpdatePlayerStatus(serverPlayer, true);
             }
         }));
         GameStagesEvent.CLEAR.register(((player) -> {
             if (player instanceof ServerPlayer serverPlayer) {
-                ChunkMap map = ((ServerLevel)serverPlayer.level).getChunkSource().chunkMap;
+                ChunkMap map = ((ServerLevel)serverPlayer.level()).getChunkSource().chunkMap;
                 ((ChunkMapAccessor)map).setUpdatePlayerStatus(serverPlayer, true);
             }
         }));

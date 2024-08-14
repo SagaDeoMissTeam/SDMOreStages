@@ -2,6 +2,7 @@ package net.sixik.sdmorestages.utils;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
@@ -62,7 +63,7 @@ public class OreBlockHelper {
     }
 
     public static ResourceLocation getBlockName(Block block) {
-        return Registry.BLOCK.getKey(block);
+        return block.arch$registryName();
     }
 
     public static ResourceLocation getBlockName(BlockState blockState) {

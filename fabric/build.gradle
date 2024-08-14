@@ -26,11 +26,10 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury-fabric:${rootProject.architectury_version}"
-    modApi "curse.maven:sdm-gamestages-1082036:5621018"
-    modApi "curse.maven:sdm-engine-core-964997:5618096"
-    modApi "curse.maven:crafttweaker-239197:5210436"
-    modApi "curse.maven:ingredient-extension-api-557735:4134668"
-    modApi "curse.maven:faux-custom-entity-data-575305:4025931"
+    modApi "curse.maven:sdm-gamestages-1082036:5621020"
+    modApi "curse.maven:sdm-engine-core-964997:5620349"
+    modApi "curse.maven:crafttweaker-239197:5375590"
+    modApi "curse.maven:faux-custom-entity-data-575305:4607750"
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
 }
