@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "sdmorestages",
+  "version": "${version}",
+
+  "name": "SDMOreStages",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All Rights Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.sixik.sdmorestages.fabric.SDMOreStagesFabric"
+    ]
+  },
+  "mixins": [
+    "sdmorestages.mixins.json",
+    "sdmorestages-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.19.2",
+    "sdm_core": ">=1.19.2-2.0.0",
+    "crafttweaker": ">=10.1.55",
+    "sdmgamestages": ">=1.19.2-1.1.0"
+  }
+}
